@@ -26,6 +26,10 @@ models:
     description: "DBT Model for product table"
   - name: purchase
     description: "DBT Model for purchase table"
+  - name: clean_orders
+    description: "DBT Model for Ephermal orders"
+  - name: final_orders
+    description: "DBT model for final orders"
                 
           
 
@@ -55,4 +59,9 @@ sources:
     schema: PUBLIC
     tables:
       - name: PURCHASE_SRC
+  - name: orders
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: BASE_ORDERS
       
