@@ -16,6 +16,8 @@ models:
       - name: emp_salary
         data_tests:
           - salary_check
+  - name: customer
+    description: "DBT Model for Customer Table"
                 
           
 
@@ -25,3 +27,9 @@ sources:
     schema: PUBLIC
     tables:
       - name: EMPLOYEE_RAW
+  - name: customer
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: CUSTOMER_SRC
+      
