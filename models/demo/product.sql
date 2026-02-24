@@ -1,3 +1,5 @@
+-- SLowly changing dimension SCD1 , first option(delete and insert)
+
 {{
     config
     (
