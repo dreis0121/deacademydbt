@@ -46,10 +46,13 @@ models:
   jaffle_shop:
     staging:
       +materialized: view
+      +database: ANALYTICS
     marts:
       +materialized: table
+      +database: ANALYTICS
   stripe:
     +materialized: view
+    +database: ANALYTICS
 
 
 
