@@ -1,0 +1,9 @@
+models:
+  - name: stg_stripe_payments
+    description: Payments from customers
+    columns:
+      - name: payment_id
+        description: Primary key for payments table
+        data_tests:
+          - unique
+          - not_null
