@@ -1,6 +1,7 @@
 {{
     config
     (
+        database = 'ANALYTICS',
         materialized = 'table'
     )
 }}
