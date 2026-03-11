@@ -1,10 +1,13 @@
+
+
+-- This is the macro being called from copy_into_snowflake_CSV.sql
 {{ config({ "materialized":'table',
 
  "transient":true,
 
  "alias":'WORK_PRODUCT_TRANSFORM',
 
- "pre_hook": macros_copy_csv('WORK_PRODUCT_COPY'),
+ "pre_hook": macros_copy_csv('WORK_PRODUCT_COPY'), 
 
  "schema": 'SILVER'
 
