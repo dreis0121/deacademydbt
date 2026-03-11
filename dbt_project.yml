@@ -61,8 +61,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   derick_dbt_project:
-      example:
-        +schema: example 
       silver:
         +schema: silver
         +database: MYDB
